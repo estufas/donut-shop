@@ -20,31 +20,35 @@ DonutLocal.prototype.avgHourSale = function() {
 };
 
 DonutLocal.prototype.render = function() {
+
+  var main = document.getElementById('content');
+  var addRow = document.createElement('tr');
+  addRow.innerHTML = this.local;
+  main.appendChild(addRow);
+
   var total = 0
     for (var i = 0; i < this.hoursOpen; i++) {
+      var addDonutLocal = document.createElement('td');
+      addDonutLocal.innerHTML = this.avgHourSale();
+      addRow.appendChild(addDonutLocal);
       total += this.avgHourSale();
-    };
-  var addDonutLocal = document.createElement('tr');
-  addDonutLocal.innerHTML = "<td>" + this.avgHourSale() + "</td>";
+
+};
   return addDonutLocal;
-}
-
-var main = document.getElementById('content');
-
-
+};
 
 
 var capHill = new DonutLocal('Capital Hill', {minCust:4, maxCust:37, avgPurch:2})
-main.appendChild(capHill.render())
+capHill.render();
 
 var southLakeU = new DonutLocal('South Lake Union', {minCust:9, maxCust:23, avgPurch:6.33})
-main.appendChild(capHill.render())
+southLakeU.render();
 
 var downTown = new DonutLocal('DownTown', {minCust:8, maxCust:43, avgPurch:4.5})
-main.appendChild(capHill.render())
+downTown.render();
 
 var wedgeWood = new DonutLocal('wedgeWood', {minCust:2, maxCust:28, avgPurch:1.25})
-main.appendChild(capHill.render())
+wedgeWood.render();
 
 var ballard = new DonutLocal('Ballard', {minCust:8, maxCust:58, avgPurch:3.75})
-main.appendChild(capHill.render())
+ballard.render();
