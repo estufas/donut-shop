@@ -15,10 +15,6 @@ DonutLocal.prototype.avgHourSale = function() {
   return Math.floor((Math.random() * (this.maxCust - this.minCust + 1) + this.minCust) * this.avgPurch);
 };
 
-// DonutLocal.prototype.avgHourSale = function() {
-//   return (this.avgHourCust() * this.avgPurch);
-// };
-
 DonutLocal.prototype.render = function() {
 
   var main = document.getElementById('content');
