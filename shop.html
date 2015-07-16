@@ -8,22 +8,44 @@
    <p><h1> Donut Shop</h1></p>
    <table id="content">
      <tr>
-       <td>Shop</td>
-       <td>7am</td>
-       <td>8am</td>
-       <td>9am</td>
-       <td>10am</td>
-       <td>11am</td>
-       <td>12pm</td>
-       <td>1pm</td>
-       <td>2pm</td>
-       <td>3pm</td>
-       <td>4pm</td>
-       <td>5pm</td>
-       <td>Total</td>
+       <th>Shop</th>
+       <th>7am</th>
+       <th>8am</th>
+       <th>9am</th>
+       <th>10am</th>
+       <th>11am</th>
+       <th>12pm</th>
+       <th>1pm</th>
+       <th>2pm</th>
+       <th>3pm</th>
+       <th>4pm</th>
+       <th>5pm</th>
+       <th>Total</th>
      </tr>
    </table>
    <p> This page tells you the average sales by shop across the seattle area. </p>
+   <form id="NewShop">
+     <fieldset>
+       <legend>Create or Edit a new Shop</legend>
+       <p>
+       <label for="local"> Location name: </label>
+       <input type="text" id="local">
+       </p>
+       <p>
+       <label for="minCust"> Minimum Customers: </label>
+       <input type="text" id="minCust">
+       </p>
+       <p>
+       <label for="maxCust"> Maximum Customers: </label>
+       <input type="text" id="maxCust">
+       </p>
+       <p>
+       <label for="avgPurch"> Average Donut per Person: </label>
+       <input type="text" id="avgPurch">
+       </p>
+       <input type="button" id="theButton" value="Add Shop">
+    </fieldset>
+   </form>
 
 
   <script src="shop.js">
