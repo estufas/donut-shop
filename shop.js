@@ -86,10 +86,6 @@ createNewStore.addEventListener("click", function(e) {
       shops[idx].hourlyTotal.length = 0;
       shops[idx].calculator();
       console.dir(document.getElementById('content'));
-      // for(var i = 0; i < shops.length; i++)
-      //   if (shops[i].local.toUpperCase() == local.toUpperCase()) {
-      //     //replace
-      //
   } else {
       var store = new DonutLocal(local, {minCust, maxCust, avgPurch});
   shops.push(store);
