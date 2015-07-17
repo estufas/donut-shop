@@ -1,0 +1,35 @@
+body {
+    background-color: #ffffff;
+}
+#header {
+  /*border-style: solid;*/
+  vertical-align: middle;
+  text-align: center;
+  width: 800px;
+  height: 250px;
+  margin: 0 auto;
+  color: #000000;
+  font-size: 5em;
+  font-family: 'UnifrakturMaguntia', cursive;
+}
+#content {
+  font-color: F22E52;
+}
+#table {
+  position: relative;
+  left: 40px;
+  top: 0px;
+  font-size: 1.5em;
+}
+#NewShop {
+  font-family: 'Anonymous Pro', ;
+  left: 0px;
+  width: 350px;
+  height: 200px;
+}
+#donut-pic {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+}
