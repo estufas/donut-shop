@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>title
+  </title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+ </head>
+ <body>
+   <header>
+    <p> Daily Donut Death </br> Count </p>
+   </header>
+    <div id="boxes">
+       <table id="content">
+         <tr>
+           <th>Shop</th>
+           <th>7am</th>
+           <th>8am</th>
+           <th>9am</th>
+           <th>10am</th>
+           <th>11am</th>
+           <th>12pm</th>
+           <th>1pm</th>
+           <th>2pm</th>
+           <th>3pm</th>
+           <th>4pm</th>
+           <th>5pm</th>
+           <th>Total</th>
+         </tr>
+       </table>
+     <p id="messege-to-the-user"> Help us fight donutcide. </p>
+      <form id="NewShop">
+       <fieldset class="content">
+          <p>
+            <label for="local"> Location name: </label>
+            <input type="text" id="local">
+          </p>
+          <p>
+            <label for="minCust"> Minimum Customers: </label>
+            <input type="text" id="minCust">
+          </p>
+          <p>
+            <label for="maxCust"> Maximum Customers: </label>
+            <input type="text" id="maxCust">
+          </p>
+          <p>
+            <label for="avgPurch"> Average Donut per Person: </label>
+            <input type="text" id="avgPurch">
+          </p>
+            <input type="button" id="theButton" value="Add Shop">
+       </fieldset>
+      </form>
+    </div>
+   <div id="donut-pic">
+     <img src="cinnamonbun.png" class="animated infinite jello" alt="donut" style="width:455px;height:348px;">
+   </div>
+  <script src="shop.js">
+  </script>
+ </body>
+</html>
