@@ -1,6 +1,6 @@
 body {
     background-color: #ffffff;
-    /*background-image: url("blood_spatter_by_blaze_acid_anarchist-d35zkqt.jpg")*/
+    /*background-image: url("donut-pic.jpg")*/
 }
 header p {
   /*border-style: solid;*/
@@ -13,6 +13,7 @@ header p {
   color: #000000;
   font-size: 5em;
   font-family: 'UnifrakturMaguntia', cursive;
+  position: fixed;
 }
 #donut-pic {
   z-index: -1;
@@ -20,12 +21,9 @@ header p {
   bottom: 100px;
   right: 0;
   width: 500px;
+  padding-top: 21%;
 }
-fieldset {
-  width: 25%;
-  margin-left:20%;
-  margin-right:15%;
-}
+
 fieldset input {
   float: right;
 }
@@ -37,14 +35,88 @@ fieldset input {
   margin-right:15%;
 }
 th {
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: Sans-Serif;
   color: #000000;
 }
 tr {
+  font-family: sans-serif;
   color: #E72921;
 }
 #messege-to-the-user {
   font-size: 1.6em;
-  width: 30%;
-  margin-left: 15%;
+  width: 100%;
+  margin-left: 30%;
+  text-align: left;
+}
+#boxes {
+  /*border-right-style: solid;*/
+  /*border-width: 1px;*/
+  margin-left: 10%;
+  width: 50%;
+  bottom: 50%;
+  padding-top: 13%;
+}
+#NewShop {
+  /* display:none; */
+  margin-left: 11%;
+  position: absolute;
+  z-index: 30;
+  background: #f49b21;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: .20s;
+  animation-duration: .30s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.content {
+  /*position: relative;
+  top: 50px;
+  width: 100%;
+  text-align: center;*/
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.0s;
+  animation-duration: 1.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.5s;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+            transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
